@@ -28,6 +28,7 @@ a:hover{
     margin-bottom:50px;
     max-width: 80%;
     height:auto;
+    cursor:pointer;
 }
 #menue{
     grid-area: m;
@@ -47,7 +48,7 @@ a:hover{
 }
 ul{
     list-style-type:none;
-    font-size:32px;
+    font-size:1.5em;
     line-height:80px;
 }
 h1{
@@ -58,7 +59,8 @@ h1{
     margin-left:220px;
     margin-right:220px;
     margin-top:50px;
-    font-size:20px;
+    font-size:1em;
+    line-height: 1.5;
 }
 #t{
     margin: 0 0 50px 50px;
@@ -275,6 +277,12 @@ h1{
     padding-left:50px;
     padding-bottom:100px;
 }
+#SectionContacts .aligner > div > p{
+    padding-left:15px;
+}
+#SectionContacts .aligner > div{
+    cursor:pointer;
+}
 #contacts{
     display:flex;
     align-items: center;
@@ -322,6 +330,37 @@ h1{
 
 /* Responsive */
 @media screen and (max-width:981px){
+    #CompteArebour{
+        text-align:center;
+        margin-top:130px;
+    }
+    #mois{
+        font-size:20px;
+        display: inline-block;
+    }
+    #jours{
+        font-size:20px;
+        display: inline-block;
+    }
+    #heures{
+        font-size:20px;
+        display: inline-block;
+    }
+    #minutes{
+        font-size:20px;
+        display: inline-block;
+    }
+    #secondes{
+        font-size:20px;  
+        display: inline-block;
+    }
+    #contour{
+        border:3px solid #449665;
+        display:inline-block;
+        margin-left:20px;
+        padding:10px;
+        margin-top:20px;
+    }
     #grid{
         grid-template-columns: 1fr;
         grid-template-areas: "m"
@@ -339,23 +378,23 @@ h1{
         margin-bottom:150px;
     }
     .carte .imgCarte{
-        bottom: 200px
+        bottom: 100px
     }
     .carte:hover .imgCarte{
         bottom:0px!important;
     }
     .carte .details h2{
-        font-size:3em;
+        font-size:1em;
     }
     .carte .details h2 span{
-        font-size:40px;
+        font-size:15px;
     }
     .carte .details{
-        bottom:100px;
+        bottom:30px;
     }
     #t{
         margin-bottom:150px;
-        font-size:2em;
+        font-size:1em;
     }
     .carte:before{
         transform: rotate(20deg);
@@ -379,18 +418,27 @@ h1{
     #logo{
         max-width:30%;
         margin:0;
-        margin-left:75px;
+        margin-left:40px;
+    }
+    #SectionContacts h2{
+        font-size:1em;
+    }
+    #SectionContacts .aligner > div > p {
+        font-size:0.6em
+    }
+    .aligner{
+        padding-bottom:25px;
     }
 
     #s{
         margin:0;
         padding:60px;
-        font-size:2em;
+        font-size:1em;
         line-height: 1.5;
     }
     #a{
         margin-bottom: 150px;
-        font-size: 2em;
+        font-size: 1em;
     }
     #imagesVideos{
         grid-template-columns: 1fr;
@@ -414,7 +462,7 @@ h1{
         display:block;
     }
     #haut #p, #haut #v{
-        font-size:3em;
+        font-size:1.2em;
         margin:0;
     }
     .boutons{
@@ -430,7 +478,7 @@ h1{
     }
     #menue nav > div >.header-toogle{
         display:flex;
-        align-items: flex-end;
+        align-items: center;
     }
     #menue nav > div >div >.header-toogle-close{
         display:none;
@@ -443,20 +491,17 @@ h1{
     }
     #menue nav ul{
         overflow: hidden;
-        max-height: 0;
-        transition: max-height 300ms ease-in-out;
+        height: 0;
+        transition: height 300ms ease-in-out;
     }
     #menue:target nav ul {
-        max-height: 650px;
+        height: 90vh;
       }
     #menue{
         border-right:0;
     }
     #menue ul{
-        font-size:3em;
-    }
-    #menue ul li{
-        padding-bottom:25px;
+        font-size:1.5em;
     }
     #contour:nth-child(1){
         margin:0;
@@ -464,13 +509,18 @@ h1{
     #contour{
         padding:30px;
     }
+    h1{
+        font-size:28px;
+    }
     
 }
 .header-toogle {
     display : none;
 }
 #menue .imgopen, .imgclose{
-    width:35%!important;
+    width:18%!important;
+    float: right;
+    margin-right: 25px;
 }
 .boutons{
     display:inline;
