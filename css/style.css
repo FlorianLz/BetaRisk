@@ -333,6 +333,7 @@ h1{
     #CompteArebour{
         text-align:center;
         margin-top:130px;
+        padding-bottom:100px;
     }
     #mois{
         font-size:20px;
@@ -489,10 +490,17 @@ h1{
     #menue:target .header-toogle > .header-toogle-open{
         display:none; 
     }
+    #contenue #menue:target {
+        width:0px!important;
+    }
     #menue nav ul{
         overflow: hidden;
         height: 0;
         transition: height 300ms ease-in-out;
+    }
+    #menue:target nav{
+        position:fixed;
+        background:#1b1c16;
     }
     #menue:target nav ul {
         height: 90vh;
