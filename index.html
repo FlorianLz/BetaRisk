@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>BetaRisk</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+	<body>
+		<div id="grid">
+			<div id="menue">
+				<nav>
+					<div><img src="images/logo.png" id="logo">
+						<div class="header-toogle">
+							<a href="#menue" class="header-toogle-open"><img class="imgopen" src="images/menu.png" alt="Ouvrir Menu"></a>
+							<a href="#" class="header-toogle-close"><img class="imgclose" src="images/close.png" width="30" alt="Fermer Menu"></a>
+						</div>
+					</div>
+					<ul>
+						<a href="index.html" class="active"><li>Accueil</li></a>
+						<a href="page/Synopsis.html"><li>Synopsis</li></a>
+						<a href="page/Equipe_Technique.html"><li>Équipe Technique</li></a>
+						<a href="page/Les_acteurs.html"><li>Les acteurs</li></a>
+						<a href="page/Galerie.html"><li>Galerie</li></a>
+						<a href="page/Nous_Suivre.html"><li>Nous suivre</li></a>
+					</ul>
+				</nav>
+			</div>
+			<div id="contenue">
+				<h1>Sortie du films dans ...</h1>
+				<div id="CompteArebour">
+					<div id="contour">
+						<div id="mois"></div>
+						<p>mois</p>
+					</div>
+					<div id="contour">
+						<div id="jours"></div>
+						<p>jours</p>
+					</div>
+					<div id="contour">
+						<div id="heures"></div>
+						<p>heures</p>
+					</div>
+					<div id="contour">
+						<div id="minutes"></div>
+						<p>minutes</p>
+					</div>
+					<div id="contour">
+						<div id="secondes"></div>
+						<p>secondes</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">// Définition de la date cible
+			let DateFinale = new Date("Dec 5, 2019 10:00:00").getTime();
+			 
+			// On actualise le compte à rebours toutes les secondes
+			let x = setInterval(function() {
+			 
+			  // Définition de la date actuelle
+			  let now = new Date().getTime();
+			   
+			  // On trouver la distance entre les 2 dates
+			  let distance = DateFinale - now;
+			   
+			  // Calcul du temps restant en mois, jours, heures, minutes et secondes
+			  let jours = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  let mois=0;
+			  let aretirer=0;
+			  //On convertis les jours en mois
+			  if (jours > 30){
+			   let mois = Math.floor(jours/30);
+			   let aretirer=mois*30;
+			  }
+			  let heures = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  let secondes = Math.floor((distance % (1000 * 60)) / 1000);
+			   
+			  // Affichage des résultats dans les divs correspondantes
+			  document.getElementById("mois").innerHTML = mois;
+			  document.getElementById("jours").innerHTML = jours;
+			  document.getElementById("heures").innerHTML = heures;
+			  document.getElementById("minutes").innerHTML = minutes;
+			  document.getElementById("secondes").innerHTML = secondes;
+			 
+			  // Si le compte à rebours est fini, on affiche un message
+			  if (distance < 0) {
+			    clearInterval(x);
+			    document.getElementById("message").innerHTML = "Le film est sorti";
+			  }
+			}, 1000);
+		</script>
+	</body>
+</html>
