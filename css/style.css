@@ -516,11 +516,14 @@ h1{
         bottom: 200px;
     }
     #logo{
-        max-width:30%;
+        max-width:50%;
         margin:0;
         margin-left:40px;
         width:500px;
         padding-top:0;
+    }
+    nav > div > a{
+        text-align:left;
     }
     #SectionContacts h2{
         font-size:1em;
@@ -628,7 +631,7 @@ h1{
     display : none;
 }
 #menue .imgopen, .imgclose{
-    width:18%!important;
+    width:27%!important;
     float: right;
     margin-right: 25px;
 }
