@@ -372,11 +372,13 @@ h1{
     .conteneurcartes {
         display:flex;
         flex-wrap:wrap;
+        z-index:10;
     }
     .carte{
         width:75vw;
         height:75vw;
         margin-bottom:150px;
+        z-index:10
     }
     .carte .imgCarte{
         bottom: 100px
@@ -501,6 +503,7 @@ h1{
     #menue:target nav{
         position:fixed;
         background:#1b1c16;
+        z-index:1000;
     }
     #menue:target nav ul {
         height: 90vh;
