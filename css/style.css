@@ -4,10 +4,17 @@
     box-sizing: border-box;
     font-family: 'Arial Rounded MT';
 }
+
 @font-face {
-    font-family: "Arial Rounded MT";
-    src: url("../fonts/ArialRounded.ttf") format("ttf"),
-   }
+    font-family: "Arial Rounded MT"; 
+    src: url("//db.onlinewebfonts.com/t/ef6bdf5ef216552c7e9869841e891ca0.eot"); 
+    src: url("//db.onlinewebfonts.com/t/ef6bdf5ef216552c7e9869841e891ca0.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/ef6bdf5ef216552c7e9869841e891ca0.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/ef6bdf5ef216552c7e9869841e891ca0.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/ef6bdf5ef216552c7e9869841e891ca0.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/ef6bdf5ef216552c7e9869841e891ca0.svg#Arial Rounded MT Bold") format("svg"); 
+}
+
 body{
     background-color: #1b1c16;
     color:white;
@@ -169,7 +176,7 @@ h1{
     padding-left:120px;
     padding-right:120px;
     padding-top:50px;
-    font-size:1.1em;
+    font-size:1.2em;
     line-height: 1.75;
 }
 #t{
