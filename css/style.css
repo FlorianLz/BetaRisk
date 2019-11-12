@@ -19,6 +19,18 @@ body{
     background-color: #1b1c16;
     color:white;
 }
+.hautgauche{
+    position:absolute;
+    top:5px;
+    left:5px;
+    width:4%;
+}
+.basdroite{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    width:4%;
+}
 a{
     text-decoration:none;
     color:white;
@@ -37,7 +49,7 @@ a:hover{
     height:auto;
     cursor:pointer;
     fill:transparent;
-    padding-top:30px;
+    padding-top:35px;
 }
 #logo path:nth-child(1),#logomobile path:nth-child(1){
     animation: AnimBetaRiskRouge 2s ease forwards;
@@ -449,6 +461,9 @@ h1{
 
 /* Responsive */
 @media screen and (max-width:981px){
+    .hautgauche, .basdroite{
+        display:none;
+    }
     #CompteArebour{
         text-align:center;
         margin:0;
