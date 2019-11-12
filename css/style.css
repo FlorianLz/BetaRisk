@@ -32,83 +32,83 @@ a:hover{
     fill:transparent;
     padding-top:30px;
 }
-#logo path:nth-child(1){
+#logo path:nth-child(1),#logomobile path:nth-child(1){
     animation: AnimBetaRiskRouge 2s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(2){
+#logo path:nth-child(2),#logomobile path:nth-child(2){
     animation: AnimBetaRiskRouge 2s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(3){
+#logo path:nth-child(3),#logomobile path:nth-child(3){
     animation: AnimBetaRiskRouge 2s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(4){
+#logo path:nth-child(4),#logomobile path:nth-child(4){
     animation: AnimBetaRiskRouge 2s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(5){
+#logo path:nth-child(5),#logomobile path:nth-child(5){
     animation: AnimBetaRiskRouge 2s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(6){
+#logo path:nth-child(6),#logomobile path:nth-child(6){
     animation: AnimBetaRiskRouge 2s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(7){
+#logo path:nth-child(7),#logomobile path:nth-child(7){
     animation: AnimBetaRiskRouge 2s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(8){
+#logo path:nth-child(8),#logomobile path:nth-child(8){
     animation: AnimBetaRiskRouge 2s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
 
-#logo path:nth-child(9){
+#logo path:nth-child(9),#logomobile path:nth-child(9){
     animation: AnimBetaRiskVert 3.5s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(10){
+#logo path:nth-child(10),#logomobile path:nth-child(10){
     animation: AnimBetaRiskVert 3.5s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(11){
+#logo path:nth-child(11),#logomobile path:nth-child(11){
     animation: AnimBetaRiskVert 3.5s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(12){
+#logo path:nth-child(12),#logomobile path:nth-child(12){
     animation: AnimBetaRiskVert 3.5s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(13){
+#logo path:nth-child(13),#logomobile path:nth-child(13){
     animation: AnimBetaRiskVert 3.5s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(14){
+#logo path:nth-child(14),#logomobile path:nth-child(14){
     animation: AnimBetaRiskVert 3.5s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(15){
+#logo path:nth-child(15),#logomobile path:nth-child(15){
     animation: AnimBetaRiskVert 3.5s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
 }
-#logo path:nth-child(16){
+#logo path:nth-child(16),#logomobile path:nth-child(16){
     animation: AnimBetaRiskVert 3.5s ease forwards;
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
@@ -131,6 +131,16 @@ a:hover{
     grid-area: m;
     text-align:center;
     border-right: 3px solid #449665;
+    max-width:100vh;
+}
+#menue nav {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menue > nav > div{
+    display:none;
 }
 #contenue{
     grid-area: c;
@@ -194,6 +204,8 @@ h1{
     display:inline-block;
     margin-left:40px;
     padding:15px;
+    width:124px;
+    height:124px;
 }
 #haut h1{
     display:inline-block;
@@ -515,7 +527,7 @@ h1{
       .carte:hover .imgCarte{
         bottom: 200px;
     }
-    #logo{
+    #logo,#logomobile{
         max-width:50%;
         margin:0;
         margin-left:40px;
@@ -581,6 +593,12 @@ h1{
         padding-top:20px;
         padding-bottom:20px;
     }
+    #menue > nav{
+        display:list-item;
+    }
+    #menue .masquersurmobile{
+        display:none!important;
+    }
     #menue nav > div >.header-toogle{
         display:flex;
         align-items: center;
@@ -607,6 +625,7 @@ h1{
         background:#1b1c16;
         z-index:1000;
         width:100vw;
+        height:100vh;
     }
     #menue:target nav ul {
         height: 90vh;
