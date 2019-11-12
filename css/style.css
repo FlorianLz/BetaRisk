@@ -442,7 +442,7 @@ h1{
     #CompteArebour{
         text-align:center;
         margin:0;
-        padding-bottom:100px;
+        padding-bottom:20px;
     }
     #mois{
         font-size:20px;
@@ -647,6 +647,17 @@ h1{
     }
     
 }
+@media screen and (max-width:418px){
+    #CompteArebour > #contour:nth-child(3), #CompteArebour > #contour:nth-child(5){
+        margin-left:0;
+    }
+}
+@media screen and (max-width:275px){
+    #CompteArebour > #contour{
+        margin-left:0;
+    }
+}
+
 .header-toogle {
     display : none;
 }
