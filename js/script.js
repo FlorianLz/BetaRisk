@@ -1,5 +1,5 @@
 // Définition de la date cible
-let DateFinale = new Date("Dec 5, 2019 10:00:00").getTime();
+let DateFinale = new Date("Feb 7, 2020 20:00:00").getTime();
 			 
 // On actualise le compte à rebours toutes les secondes
 let x = setInterval(function() {
@@ -16,8 +16,8 @@ let x = setInterval(function() {
   let aretirer=0;
   //On convertis les jours en mois
   if (jours > 30){
-   let mois = Math.floor(jours/30);
-   let aretirer=mois*30;
+   mois = Math.floor(jours/30);
+   aretirer=mois*30;
   }
   let heures = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -25,7 +25,7 @@ let x = setInterval(function() {
    
   // Affichage des résultats dans les divs correspondantes
   document.getElementById("mois").innerHTML = mois;
-  document.getElementById("jours").innerHTML = jours;
+  document.getElementById("jours").innerHTML = jours-aretirer;
   document.getElementById("heures").innerHTML = heures;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("secondes").innerHTML = secondes;

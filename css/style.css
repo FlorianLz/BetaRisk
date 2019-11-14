@@ -21,15 +21,21 @@ body{
 }
 .hautgauche{
     position:absolute;
-    top:5px;
-    left:5px;
-    width:4%;
+    width:4vw;
+    height:4vw;
+    z-index:1000;
+    border-top:12px solid white;
+    border-left:12px solid white;
 }
 .basdroite{
     position:absolute;
-    bottom:5px;
-    right:5px;
-    width:4%;
+    width:4vw;
+    height:4vw;
+    z-index:1000;
+    border-bottom:12px solid white;
+    border-right:12px solid white;
+    right:0;
+    bottom:0;
 }
 a{
     text-decoration:none;
@@ -166,6 +172,17 @@ a:hover{
 }
 #contenue{
     grid-area: c;
+    position:relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contenue h1{
+    margin:0;
+    padding-left:50px;
+    align-self:flex-start;
 }
 #grid{
     display: grid;
@@ -174,7 +191,7 @@ a:hover{
                 "m c"
     ;
     height: 100vh;
-    overflow:scroll;
+    overflow:auto;
 }
 ul{
     list-style-type:none;
@@ -193,10 +210,14 @@ h1{
     line-height: 1.75;
 }
 #t{
-    margin: 0 0 50px 50px;
+    padding:50px;
+    padding-top:30px;
+    align-self:flex-start;
 }
 #a{
-    margin: 20px 0 50px 50px;
+    padding:50px;
+    padding-top:30px;
+    align-self:flex-start;
 }
 #CompteArebour{
     text-align:center;
@@ -405,9 +426,13 @@ h1{
     width:300px;
     height:150px;
 }
+#SectionContacts{
+    min-width:100%;
+}
 #SectionContacts h2{
     padding-left:50px;
     padding-bottom:100px;
+    width:100%;
 }
 #SectionContacts .aligner > div > p{
     padding-left:15px;
