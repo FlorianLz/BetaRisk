@@ -173,6 +173,9 @@ a:hover{
 #contenue{
     grid-area: c;
     position:relative;
+    height:fit-content;
+}
+#contenue > div{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -250,6 +253,9 @@ h1{
     padding:15px;
     width:124px;
     height:124px;
+}
+#haut{
+    width:100%;
 }
 #haut h1{
     display:inline-block;
@@ -623,7 +629,7 @@ h1{
         padding:20px;
     }
     #img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9{
-        width:100%;
+        width: 90vw!important;
         height:50vw;
     }
     #haut h1{
@@ -698,6 +704,12 @@ h1{
     }
     h1{
         font-size:28px;
+    }
+    #contenue > div{
+        justify-content: flex-start;
+    }
+    .contact, .contact > div{
+        min-height:fit-content!important;
     }
     
 }
