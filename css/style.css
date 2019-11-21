@@ -707,11 +707,12 @@ h1{
     }
     #contenue > div{
         justify-content: flex-start;
+        height:fit-content;
+        min-height:fit-content;
     }
     .contact, .contact > div{
         min-height:fit-content!important;
     }
-    
 }
 @media screen and (max-width:418px){
     #CompteArebour > #contour:nth-child(3), #CompteArebour > #contour:nth-child(5){
