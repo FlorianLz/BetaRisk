@@ -53,3 +53,11 @@ function galerie(){
     document.getElementById('photo'+(j+1)).src="../photos/"+tab[j] +".jpg";
   }
 }
+
+function ouvrirmodale(src){
+  document.getElementById('fenetremodale').style.display="block";
+  document.getElementById('imagemodale').src=src;
+}
+function fermerfenetre(val){
+document.getElementById('fenetremodale').style.display="none";
+}
