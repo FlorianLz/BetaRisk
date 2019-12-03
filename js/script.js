@@ -55,7 +55,7 @@ function galerie(){
 }
 
 function ouvrirmodale(src){
-  document.getElementById('fenetremodale').style.display="block";
+  document.getElementById('fenetremodale').style.display="flex";
   document.getElementById('imagemodale').src=src;
 }
 function fermerfenetre(val){
