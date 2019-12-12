@@ -1,5 +1,5 @@
 function comptearebours(){// Définition de la date cible
-  let DateFinale = new Date("Feb 7, 2020 20:00:00").getTime();
+  let DateFinale = new Date("Feb 6, 2020 20:00:00").getTime();
         
   // On actualise le compte à rebours toutes les secondes
   let x = setInterval(function() {
@@ -39,6 +39,8 @@ function comptearebours(){// Définition de la date cible
 }
 
 function galerie(){
+  document.getElementById('imagesVideos').style.display='grid';
+  document.getElementById('videos').style.display='none';
   let tab = [];
   for (let i=0;i<10;i++){
     let nb = 1+Math.floor(Math.random()*46);
@@ -52,6 +54,10 @@ function galerie(){
   for(let j=0; j<9;j++){
     document.getElementById('photo'+(j+1)).src="../photos/"+tab[j] +".jpg";
   }
+}
+function videos(){
+  document.getElementById('videos').style.display='flex';
+  document.getElementById('imagesVideos').style.display='none';
 }
 
 function ouvrirmodale(src){
